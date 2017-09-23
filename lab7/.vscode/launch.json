@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/yfs_client",
+            "args": ["./yfs1", "4000", "5000", "./cert/user1.pem"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "osx": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/local/bin/amd64-linux-gdb",
+                "miDebuggerServerAddress": "127.0.0.1:4567"
+            },
+            "windows": {
+                "MIMode": "gdb"
+            }
+        },
+        {
+            "name": "C++ Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceRoot}/yfs_client",
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "osx": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/local/bin/amd64-linux-gdb",
+                "miDebuggerServerAddress": "127.0.0.1:4567"
+            },
+            "windows": {
+                "MIMode": "gdb"
+            }
+        }
+    ]
+}

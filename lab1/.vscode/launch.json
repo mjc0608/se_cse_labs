@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/lab1_tester",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "osx": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/local/bin/amd64-linux-gdb",
+                "miDebuggerServerAddress": "127.0.0.1:4567"
+            },
+            "windows": {
+                "MIMode": "gdb"
+            }
+        },
+        {
+            "name": "C++ Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceRoot}/lab1_tester",
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "osx": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/amd64-linux-gdb",
+                "miDebuggerServerAddress": "127.0.0.1:4567"
+            },
+            "windows": {
+                "MIMode": "gdb"
+            }
+        }
+    ]
+}
